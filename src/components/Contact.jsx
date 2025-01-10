@@ -22,12 +22,10 @@ const Contact = () => {
         </div>
         <div className=" flex justify-center items-center">
           <form
-            onSubmit={handleSubmit}
-            name="contact"
-            method="POST"
-            action="https://getform.io/f/agddrdyb"
-            className=" flex flex-col w-full md:w-1/2"
+            action="https://api.web3forms.com/submit" method="POST"
+            className=" flex flex-col w-full md:w-1/2" onSubmit={handleSubmit}
           >
+             <input type="hidden" name="access_key" value="0534137d-937a-4690-b71b-d8bbb9bb41c9"></input>
             <input
               type="text"
               name="name"
@@ -56,6 +54,9 @@ const Contact = () => {
               required
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
+            <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }}></input>
+
+            <input type="hidden" name="honeypot_time" value="0"></input>
 
             <button type="submit" className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Send Message
