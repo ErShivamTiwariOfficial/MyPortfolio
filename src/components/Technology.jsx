@@ -7,7 +7,7 @@ import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import angular from "../assets/angular.png";
-const Experience = () => {
+const Technology = () => {
   const techs = [
     {
       id: 1,
@@ -37,7 +37,7 @@ const Experience = () => {
       id: 5,
       src: angular,
       title: "Angular",
-      style: "shadow-green-400",
+      style: "shadow-red-400",
     },
     // {
     //   id: 6,
@@ -85,13 +85,13 @@ const Experience = () => {
 
   return (
     <div
-      name="experience"
+      name="Technology"
       className="bg-gradient-to-b from-gray-800 to-black w-full h-screen experience"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Experience
+          Technology
           </p>
           <p className="py-6">These are the technologies I've worked with and used them in my projects.</p>
         </div>
@@ -112,4 +112,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Technology;
