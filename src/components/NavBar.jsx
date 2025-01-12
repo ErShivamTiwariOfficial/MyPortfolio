@@ -14,14 +14,14 @@ const NavBar = () => {
       id: 2,
       link: "about",
     },
-    // {
-    //   id: 3,
-    //   link: "portfolio",
-    // },
     {
-      id: 4,
-      link: "Technology",
+      id: 3,
+      link: "Project",
     },
+    // {
+    //   id: 4,
+    //   link: "Technology",
+    // },
     {
       id: 5,
       link: "contact",

@@ -1,5 +1,6 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsappSquare } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import resume from "../assets/resume.pdf"
@@ -15,17 +16,26 @@ const SocialLinks = () => {
       href: "https://www.linkedin.com/in/ershivamtiwari/",
       style: "rounded-tr-md",
     },
-    {
-      id: 2,
-      child: (
-        <>
-          GitHub <FaGithub size={30} />
-        </>
-      ),
-      href: "https://github.com/ErShivamTiwariOfficial",
-    },
+    // {
+    //   id: 2,
+    //   child: (
+    //     <>
+    //       GitHub <FaGithub size={30} />
+    //     </>
+    //   ),
+    //   href: "https://github.com/ErShivamTiwariOfficial",
+    // },
     {
       id: 3,
+      child: (
+        <>
+          WhatsApp <FaWhatsappSquare size={30} />
+        </>
+      ),
+      href: "https://wa.me/+918953015086?text=Hi%20Shivam%20Tiwari%20",
+    },
+    {
+      id: 4,
       child: (
         <>
           Email <HiOutlineMail size={30} />
@@ -34,7 +44,7 @@ const SocialLinks = () => {
       href: "mailto:shiwamkumar61@gmail.com",
     },
     {
-      id: 4,
+      id: 5,
       child: (
         <>
           Resume <BsFillPersonLinesFill size={30} />
@@ -44,7 +54,7 @@ const SocialLinks = () => {
       download: true,
     },
     // {
-    //   id: 5,
+    //   id: 6,
     //   child: (
     //     <>
     //       Twitter <FaTwitter size={30} />

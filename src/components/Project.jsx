@@ -1,13 +1,15 @@
 import React from "react";
-import ApanaTime from "../assets/portfolio/ApanaTime.jpg"; // Add the correct path to the api image
+import ApanaTime from "../assets/portfolio/ApanaTime.jpg";
+ 
+// Add the correct path to the api image
 // import webpostman from "../assets/portfolio/webpostman.jpg";
 // import apod from "../assets/portfolio/apod.jpg";
 // import waveportal from "../assets/portfolio/waveportal.jpg";
 // import nftportal from "../assets/portfolio/nftportal.jpg";
 // import iptracker from "../assets/portfolio/iptracker.jpg";
 
-const Projects = () => {
-  const projects = [
+const Project = () => {
+  const proj = [
     {
       id: 1,
       src: ApanaTime,
@@ -48,7 +50,7 @@ const Projects = () => {
 
   return (
     <div
-      name="portfolio"
+      name="Project"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen portfolio"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
@@ -60,7 +62,7 @@ const Projects = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {projects.map(({ id, src, link, repo }) => (
+          {proj.map(({ id, src, link, repo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -83,4 +85,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;
