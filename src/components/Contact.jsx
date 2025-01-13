@@ -10,10 +10,11 @@ function handleSubmit(e){
 const Contact = () => {
   return (
     <div
-      name="contact"
-      className="contact w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+      name="Contact"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen contact"
     >
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact Me
@@ -52,7 +53,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Enter your message"
-              rows="10"
+              rows="5"
               required
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
