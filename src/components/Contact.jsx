@@ -24,6 +24,7 @@ const Contact = () => {
           <form
             action="https://api.web3forms.com/submit" method="POST"
             className=" flex flex-col w-full md:w-1/2" onSubmit={handleSubmit}
+            netlify
           >
              <input type="hidden" name="access_key" value="0534137d-937a-4690-b71b-d8bbb9bb41c9"></input>
             <input
